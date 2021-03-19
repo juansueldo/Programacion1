@@ -27,20 +27,28 @@ int main ()
 		if(flag || numero < menor)
 		{
 			menor = numero;
-			flag = 0;
-		}		
+
+	    }
+	    if(flag || numero != mayor && numero != menor)
+	    {
+	    	medio = numero;
+	    	flag = 0;
+		}
+		else
+		{
+			medio = 0;
+		}
 
 	}
-	
 		
-	if(numero > menor && numero < mayor)
+	if(medio)
 	{
-		printf("No existe");
+		printf("\nEl numero del medio es %d",medio);	
 		//printf("El numero del medio es %d",numero);
 	}
 	else
 	{
-		printf("El numero del medio es %d",numero);	
+		printf("\nNo existe");	
 	}
 	
 			
