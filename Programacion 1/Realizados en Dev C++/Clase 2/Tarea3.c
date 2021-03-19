@@ -44,7 +44,6 @@ int main ()
 	if(medio)
 	{
 		printf("\nEl numero del medio es %d",medio);	
-		//printf("El numero del medio es %d",numero);
 	}
 	else
 	{
