@@ -101,14 +101,11 @@ int main()
     scanf("%c", &seguir);
     while(seguir != 's' && seguir != 'n')
     {
-    printf("Error. Desea ingresar otro pasajero? ('s' para si, 'n' para no) ");
+    printf("Error. Desea ingresar otro pasajero? ('s' para si, 'n' para no)\n ");
     fflush(stdin);
     scanf("%c", &seguir);	
 	}
     }while(seguir == 's');
-    
-    printf("Edad min %d",min);
-    printf("Nro cliente min %d",clienteMenor);
     
     if(porcentaje >= 50)
     {
@@ -146,7 +143,7 @@ int main()
     if(descuento != 0)
     {
     precioFinal = (float)precioBruto - precioBruto * descuento/100;
-    printf("\nEl precio con descuento es %.2f", precioFinal);
+    printf("\nEl precio con descuento es: $%.2f", precioFinal);
     }
     else
     {
@@ -155,3 +152,5 @@ int main()
     
     return EXIT_SUCCESS;
 }
+
+

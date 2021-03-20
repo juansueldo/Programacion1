@@ -7,6 +7,7 @@ En caso de que no exista también informarlo.*/
 int main ()
 {
 	setbuf(stdout, NULL);
+	
 	int numero;
 	int mayor;
 	int menor;
