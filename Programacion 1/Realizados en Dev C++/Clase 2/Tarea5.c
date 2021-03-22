@@ -24,8 +24,9 @@ int main(void) {
 	int acumPos = 0;
 	int acumNeg = 1;
 	int flag2 = 1;
+	int i;
 
-	for(int i=0; i<3;i++)
+	for(i=0; i<3;i++)
 	{
 		printf("Ingrese un numero");
 		scanf("%d", &numero);

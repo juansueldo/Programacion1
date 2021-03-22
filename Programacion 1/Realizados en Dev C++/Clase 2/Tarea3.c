@@ -11,47 +11,59 @@ int main ()
 	int numero;
 	int mayor;
 	int menor;
-	int medio;
-	int flag = 1;
+	int primero;
+	int segundo;
+	int tercero;
+	int acumMedio = 0;
 	int i;
+	
 	
 	for(i = 0; i < 3; i++)
 	{
 		printf("Ingrese un numero: ");
+		fflush(stdin);
 		scanf("%d",&numero);
 		
-		if(flag || numero > mayor)
+		switch(i)
+		{
+			case 0:
+				primero = numero;
+				menor = numero;
+				mayor = numero;
+				break;
+			case 1:
+				segundo = numero;
+				break;
+			case 2:
+				tercero = numero;
+				break;
+		}
+		if(numero > mayor)
 		{
 			mayor = numero;
 		}
-		
-		if(flag || numero < menor)
+		if(numero < menor)
 		{
 			menor = numero;
-
-	    }
-	    if(flag || numero != mayor && numero != menor)
-	    {
-	    	medio = numero;
-	    	flag = 0;
-		}
-		else
-		{
-			medio = 0;
 		}
 
 	}
-		
-	if(medio)
+	if (primero != mayor && primero != menor)
 	{
-		printf("\nEl numero del medio es %d",medio);	
+		printf("\nEl numero del medio es %d",primero);
+	}
+	else if(segundo != mayor && segundo != menor)
+	{
+		printf("\nEl numero del medio es %d", segundo);
+	}
+	else if(tercero != mayor && tercero != menor)
+	{
+		printf("\nEl numero del medio es %d", tercero);
 	}
 	else
 	{
-		printf("\nNo existe");	
+		printf("\nNo existe");
 	}
-	
-			
-			
+				
 	return EXIT_SUCCESS;
 }
