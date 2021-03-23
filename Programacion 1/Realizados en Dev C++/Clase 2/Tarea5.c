@@ -26,9 +26,9 @@ int main(void) {
 	int flag2 = 1;
 	int i;
 
-	for(i=0; i<3;i++)
+	for(i=0; i<10;i++)
 	{
-		printf("Ingrese un numero");
+		printf("Ingrese un numero: ");
 		scanf("%d", &numero);
 
 		if(flag || numero < min)
@@ -64,7 +64,14 @@ int main(void) {
 	printf("\nEl mayor de los pares es %d", maxPar);
 	printf("\nLa cantidad de impares es %d", contImpares);
 	printf("\nLa suma de los positivos es %d", acumPos);
-	printf("\nEl producto de los negativos es %d", acumNeg);
+	if (acumNeg != 1)
+	{
+		printf("\nEl producto de los negativos es %d", acumNeg);	
+	}
+	else
+	{
+		printf("\nNo se ingresaron negativos");
+	}
 
 
 	return EXIT_SUCCESS;
