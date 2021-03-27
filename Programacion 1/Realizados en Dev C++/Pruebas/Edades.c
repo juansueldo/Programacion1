@@ -11,6 +11,7 @@ int main (void)
 	
 	printf("Ingrese la edad: ");
 	scanf("%d", &edad);
+
 	
 	if(edad < 13 && edad > 0)
 	{
